@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   {{ hugo.Generator }}
   <link rel="stylesheet" href="{{ "css/normalize.css" | absURL }}">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/open-sans@4.2.2/index.css" integrity="sha256-AYr95lSNSp5BDIDnnY91AUEDymHDg3fJzx7RJlwB6s4=" crossorigin="anonymous">
   {{ $caymanScss := "scss/cayman.scss" }}
   {{ $options := (dict "targetPath" "css/cayman.css") }}
   {{ $caymanCss := resources.Get $caymanScss | resources.ExecuteAsTemplate $caymanScss . | toCSS $options | fingerprint }}
